@@ -1,0 +1,19 @@
+!HMS:
+! HRASTER_ID=18    ADC
+! channel is physics channel in ADC
+! Plane = 1 is not used
+! sig = 0  means data in Positive ADC
+! bar will be a counter
+
+detector=18
+
+ROC=1
+
+!F250 module
+SLOT=18
+! chan    plane     bar    sig
+     12,      1,      1,     0!  FR-XA
+     13,      1,      2,     0!  FR-XB
+     14,      1,      3,     0!  FR-YA
+     15,      1,      4,     0!  FR-YB
+

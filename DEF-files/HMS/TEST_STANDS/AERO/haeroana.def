@@ -1,0 +1,6 @@
+# See $ANALYZER/examples/output_example.def for examples
+#
+block H.aero.*
+block T.hms.*
+
+#include "DEF-files/HMS/TEST_STANDS/AERO/haeroana_histos.def"

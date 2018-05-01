@@ -1,0 +1,5 @@
+# See $ANALYZER/examples/output_example.def for examples
+#
+block T.shms.*
+
+#include "DEF-files/SHMS/TEST_STANDS/TRIG/ptrigana_histos.def"

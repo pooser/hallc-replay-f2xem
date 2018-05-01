@@ -1,0 +1,38 @@
+# Report file for SHMS stack
+
+Block: RawDecode
+
+Pedestal_event     g.evtyp == 99
+SHMS_event         g.evtyp == 1
+HMS_event          g.evtyp == 2
+COIN_event         g.evtyp == 4
+
+RawDecode_master  1
+
+Block: Decode
+
+TRIG1         T.shms.pTRIG1_tdcTimeRaw > 0
+TRIG2         T.shms.pTRIG2_tdcTimeRaw > 0
+TRIG3         T.shms.pTRIG3_tdcTimeRaw > 0
+SHMS_Pretrig  TRIG1 || TRIG2 || TRIG3
+
+shms_trigs        SHMS_event
+edtm_accepted     T.shms.pEDTM_tdcTime != 0.0
+physics_accepted  T.shms.pEDTM_tdcTime == 0.0
+
+Decode_master     SHMS_event
+
+Block: CoarseTracking
+CoarseTracking_master SHMS_event
+
+Block: CoarseReconstruct
+CoarseReconstruct_master SHMS_event
+
+Block: Tracking
+Tracking_master  SHMS_event
+
+Block: Reconstruct
+Reconstruct_master SHMS_event
+
+Block: Physics
+Physics_master SHMS_event

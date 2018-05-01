@@ -1,0 +1,42 @@
+;                    BPM calibration constants
+;                    =========================
+
+
+; average beam positions:
+; Use the Hall C EPICS BPM values in units of cm
+  gbeam_x  = +0.00
+  gbeam_xp = +0.00
+  gbeam_y  = +0.00
+  gbeam_yp = +0.00
+
+;positions of BPMs relative to target (from survey 2017)
+gbpm_zpos = 370.82, 224.96, 129.3 ; cm
+
+
+;             Fast Raster calibration constants
+;             =================================
+  gusefr               = 1  
+; flag if 1 fast raster data used with average beam pos and angles in
+calculating beam position
+; if 0 then only use average beam pos and angles in calculating beam position
+; Various fast raster quantities: gUse* are flags
+
+
+  gfr_cal_mom  = 6.4  ; = beam momnetum during jan 2018 3 pass 
+       
+  gfrya_adcpercm = (77755.-57411.)/.2;
+  gfryb_adcpercm = (71093.-52056.)/.2;
+  gfrxa_adcpercm = (75733.-51938.)/.2;
+  gfrxb_adcpercm =  (79778.-57293.)/.2;
+
+  gfrya_adc_zero_offset = (77755.+57411.)/2.;
+  gfryb_adc_zero_offset = (71093.+52056.)/2.;
+  gfrxa_adc_zero_offset = (75733.+51938.)/2.;
+  gfrxb_adc_zero_offset = (79778.+57293.)/2. ;
+
+ 
+; positions of FR magnets relative to target
+  gfrx_dist  = 1375   ; cm
+  gfry_dist  = 1337   ; cm
+
+
