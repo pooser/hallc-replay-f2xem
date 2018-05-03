@@ -1,0 +1,12 @@
+*~
+#*#
+HISTOGRAMS
+MON_OUTPUT
+REPORT_OUTPUT
+ROOTfiles
+cache
+hcana
+raw
+raw.copiedtotape
+run_hms.sh
+run_shms.sh
