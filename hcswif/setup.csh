@@ -3,7 +3,7 @@
 set hcana_dir=/w/hallc-scifs17exp/xem2/$USER/hcana
 set hallc_replay_dir=/w/hallc-scifs17exp/xem2/$USER/hallc-replay-f2xem
 
-source /apps/root/6.12.04/setroot_CUE.csh
+source /site/12gev_phys/production.sh 2.1
 
 set curdir=$PWD
 

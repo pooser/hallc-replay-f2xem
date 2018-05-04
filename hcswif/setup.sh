@@ -3,19 +3,17 @@
 # -----------------------------------------------------------------------------
 #  Change these if this if not where hallc_replay and hcana live
 
-#export hcana_dir=/volatile/hallc/comm2017/$USER/hcana
-#export hallc_replay_dir=/volatile/hallc/comm2017/$USER/hallc_replay
-
 export hcana_dir=/w/hallc-scifs17exp/xem2/$USER/hcana
 export hallc_replay_dir=/w/hallc-scifs17exp/xem2/$USER/hallc-replay-f2xem
 
 # -----------------------------------------------------------------------------
 #  Change if this gives you the wrong version of root, evio, etc
-#source /site/12gev_phys/production.sh 2.1
-source /apps/root/6.12.04/setroot_CUE.sh
+
+source /site/12gev_phys/production.sh 2.1
 
 # -----------------------------------------------------------------------------
 # Source setup scripts
+
 curdir=`pwd`
 cd $hcana_dir
 source setup.sh
