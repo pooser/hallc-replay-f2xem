@@ -12,7 +12,8 @@ import warnings
 # Define environment
 
 # Where do you want your job output (json files, stdout, stderr)?
-out_dir = os.path.join('/volatile/hallc/comm2017/', getpass.getuser() , 'hcswif/output')
+# out_dir = os.path.join('/volatile/hallc/comm2017/', getpass.getuser() , 'hcswif/output')
+out_dir = os.path.join('/lustre/expphy/volatile/hallc/xem2/', getpass.getuser() , 'hcswif/output')
 if not os.path.isdir(out_dir):
      raise FileNotFoundError('out_dir: ' + out_dir + ' does not exist')
 
@@ -261,7 +262,7 @@ def addCommonJobInfo(workflow, parsed_args):
         job['os'] = 'centos7'
         job['diskBytes'] = 10000000000
         job['ramBytes'] = 8000000000
-        job['cpuCores'] = 8
+        job['cpuCores'] = 1
         job['timeSecs'] = 14400
 
         workflow['jobs'][n] = copy.deepcopy(job)
