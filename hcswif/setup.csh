@@ -1,15 +1,20 @@
 #!/usr/bin/csh
 
-set hcana_dir=/w/hallc-scifs17exp/xem2/$USER/hcana
-set hallc_replay_dir=/w/hallc-scifs17exp/xem2/$USER/hallc-replay-f2xem
+# -----------------------------------------------------------------------------
+#  Change these if this if not where hallc_replay and hcana live
+setenv hcana_dir "/w/hallc-scifs17exp/xem2/$USER/hcana"
+setenv hallc_replay_dir "/w/hallc-scifs17exp/xem2/$USER/hallc-replay-f2xem"
 
-source /site/12gev_phys/production.sh 2.1
+# -----------------------------------------------------------------------------
+#  Change if this gives you the wrong version of root, evio, etc
+source /site/12gev_phys/production.csh 2.1
 
-set curdir=$PWD
-
+# -----------------------------------------------------------------------------
+# Source setup scripts
+set curdir=`pwd`
 cd $hcana_dir
 source setup.csh
-set PATH=$hcana_dir/bin:$PATH
+setenv PATH "$hcana_dir/bin:$PATH"
 echo Sourced $hcana_dir/setup.csh
 
 cd $hallc_replay_dir
@@ -18,3 +23,4 @@ echo Sourced $hallc_replay_dir/setup.csh
 
 echo cd back to $curdir
 cd $curdir
+
