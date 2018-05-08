@@ -1,12 +1,12 @@
-block T.shms.*
-
 begin epics
 
 IBC3H00CRCUR4
 hac_bcm_average
 ibcm1
-ibcm2
 ibcm17
+ibcm2
+ibcm4a
+ibcm4b
 iunser
 itov3out
 itov4out
@@ -18,5 +18,3 @@ IPM3H07C.XPOS
 IPM3H07C.YPOS
 
 end epics
-
-
