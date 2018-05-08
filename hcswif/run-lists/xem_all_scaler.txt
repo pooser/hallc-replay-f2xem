@@ -1,0 +1,1 @@
+./hcswif.py --mode replay --spectrometer SHMS_SCALER --run 2484-2498 2502-2508 2509-2523 2524-2538 2540-2545 2547-2563 --name xem-scaler --project c-comm2017 --cpu 1
