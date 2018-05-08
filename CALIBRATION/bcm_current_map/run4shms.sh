@@ -5,7 +5,9 @@ list=$1
 while read line
 do
 
-fname=/home/cdaq/hallc-online/hallc_replay/ROOTfiles/shms_replay_production_${line}_-1.root
+fname=ROOTfiles/shms_replay_scalers_${line}_-1.root
+
+echo Processing ${fname}
 
 root -b<<EOF
 .x run.C("${fname}", "P")
@@ -14,5 +16,7 @@ EOF
 [ ! -d "shms" ] && `mkdir shms`
 
 mv bcmcurrent* ./shms/
+
+echo Created bcmcurrent_${line}.param
 
 done < ${list}
