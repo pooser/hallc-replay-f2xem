@@ -1,0 +1,18 @@
+#**********************
+# Noble Gas Cherenkov *
+#**********************
+
+#-----------------------------
+# SHMS NGC FADC/NPE MONITORING
+#-----------------------------
+
+TH2F pngcer_npe 'SHMS Noble Gas Cherenkov Number of Photoelectrons vs. PMT Number; PMT Number; Number of Photoelectrons / 0.5 Photoelectrons' [I+1] P.ngcer.npe 4 0.5 4.5 100 0 50 P.ngcer.npe>0.0 
+TH1F pngcer_tot_npe 'SHMS Noble Gas Cherenkov Total Number of Photoelectrons; Total Number of Photoelectrons; Number of Entries / 0.5 Photoelectrons' P.ngcer.npeSum 100 0 50 P.ngcer.npeSum>0.0 
+
+#--------------------------
+# SHMS NGC TRACK PROJECTION
+#--------------------------
+
+TH2F pngcer_xytrack 'SHMS Noble Gas Cherenkov Tracking Y vs X; Y (cm) / 1 cm; X (cm) / 1 cm' P.ngcer.yAtCer P.ngcer.xAtCer 120 -60 60 120 -60 60 P.ngcer.xAtCer!=0.0&&P.ngcer.yAtCer!=0
+TH2F pngcer_x_vs_npe 'SHMS Noble Gas Cherenkov X vs NPE; NPE / 0.5 PE ; X (cm) / 1 cm' P.ngcer.npeSum P.ngcer.xAtCer 100 0 50 120 -60 60 P.ngcer.xAtCer!=0.0&&P.ngcer.yAtCer!=0
+TH2F pngcer_y_vs_npe 'SHMS Noble Gas Cherenkov Y vs NPE; NPE / 0.5 PE ; Y (cm) / 1 cm' P.ngcer.npeSum P.ngcer.yAtCer 100 0 50 120 -60 60 P.ngcer.xAtCer!=0.0&&P.ngcer.yAtCer!=0
