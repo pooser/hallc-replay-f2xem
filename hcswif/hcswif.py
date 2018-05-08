@@ -45,7 +45,7 @@ def parseArgs():
     parser.add_argument('--mode', nargs=1, dest='mode',
             help='type of workflow (replay or command)')
     parser.add_argument('--spectrometer', nargs=1, dest='spectrometer',
-            help='spectrometer to analyze (HMS, SHMS, COIN, HMS_COIN, SHMS_COIN)')
+            help='spectrometer to analyze (HMS, SHMS, COIN, HMS_COIN, SHMS_COIN, HMS_SCALER, SHMS_SCALER)')
     parser.add_argument('--run', nargs='+', dest='run', 
             help='a list of run numbers and ranges, or a file listing run numbers')
     parser.add_argument('--events', nargs=1, dest='events',
@@ -114,8 +114,8 @@ def initializeWorkflow(parsed_args):
 def getReplayJobs(parsed_args, wf_name):
     # Spectrometer
     spectrometer = parsed_args.spectrometer[0]
-    if spectrometer.upper() not in ['HMS','SHMS','COIN', 'HMS_COIN', 'SHMS_COIN']:
-        raise ValueError('Spectrometer must be HMS, SHMS, COIN, HMS_COIN, or SHMS_COIN')
+    if spectrometer.upper() not in ['HMS','SHMS','COIN', 'HMS_COIN', 'SHMS_COIN', 'HMS_SCALER', 'SHMS_SCALER']:
+        raise ValueError('Spectrometer must be HMS, SHMS, COIN, HMS_COIN, SHMS_COIN, HMS_SCALER, or SHMS_SCALER')
 
     # Run(s)
     if parsed_args.run==None:
@@ -141,10 +141,12 @@ def getReplayJobs(parsed_args, wf_name):
 
         # We have 4 options for singles replay; "real" singles or "coin" singles
         else:
-            script_dict = { 'HMS'       : 'SCRIPTS/HMS/PRODUCTION/replay_production_all_hms.C',
-                            'SHMS'      : 'SCRIPTS/SHMS/PRODUCTION/replay_production_all_shms.C',
-                            'HMS_COIN'  : 'SCRIPTS/HMS/PRODUCTION/replay_production_hms_coin.C',
-                            'SHMS_COIN' : 'SCRIPTS/SHMS/PRODUCTION/replay_production_shms_coin.C' }
+            script_dict = { 'HMS'         : 'SCRIPTS/HMS/PRODUCTION/replay_production_all_hms.C',
+                            'SHMS'        : 'SCRIPTS/SHMS/PRODUCTION/replay_production_all_shms.C',
+                            'HMS_COIN'    : 'SCRIPTS/HMS/PRODUCTION/replay_production_hms_coin.C',
+                            'SHMS_COIN'   : 'SCRIPTS/SHMS/PRODUCTION/replay_production_shms_coin.C',
+                            'HMS_SCALER'  : 'SCRIPTS/HMS/SCALERS/replay_hms_scalers.C',
+                            'SHMS_SCALER' : 'SCRIPTS/SHMS/SCALERS/replay_shms_scalers.C' }
             replay_script = script_dict[spectrometer.upper()]
     # User specified a script so we use that one
     else:
@@ -175,6 +177,10 @@ def getReplayJobs(parsed_args, wf_name):
         if 'coin' in spectrometer.lower():
             # shms_coin and hms_coin use same coda files as coin
             coda_stem = 'coin_all_' + str(run).zfill(5)
+        elif 'scaler' in spectrometer.lower():
+            # otherwise hms_all_XXXXX or shms_all_XXXXX
+            scaler_spec = spectrometer.replace('_SCALER', '')
+            coda_stem   = scaler_spec.lower() + '_all_' + str(run).zfill(5)
         else:
             # otherwise hms_all_XXXXX or shms_all_XXXXX
             coda_stem = spectrometer.lower() + '_all_' + str(run).zfill(5)
