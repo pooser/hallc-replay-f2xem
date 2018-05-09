@@ -4,11 +4,14 @@
 
 begin epics
 
+# Beamline
 IBC3H00CRCUR4
 hac_bcm_average
 ibcm1
-ibcm2
 ibcm17
+ibcm2
+ibcm4a
+ibcm4b
 iunser
 itov3out
 itov4out
@@ -19,11 +22,11 @@ IPM3H07B.YPOS
 IPM3H07C.XPOS
 IPM3H07C.YPOS
 
-#Spectrometer Settings
+# Spectrometer Settings
 ecSHMS_Angle
 ecSP_SHMS
 
-#Magnet Currents
+# Magnet Currents
 ecSHB_Set_Current
 ecSHB_I_True
 ecSQ1_Set_Current
