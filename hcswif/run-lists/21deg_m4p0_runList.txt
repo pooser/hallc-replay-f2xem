@@ -1,4 +1,0 @@
-./hcswif.py --mode replay --spectrometer SHMS --run 2509-2523 --name xem-21deg-m4p0 --project c-comm2017 --cpu 1
-
-2509-2523
-2509 2510 2511 2512 2513 2514 2515 2516 2517 2518 2519 2520 2521 2522 2523
