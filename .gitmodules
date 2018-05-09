@@ -8,5 +8,5 @@
 	branch = master
 [submodule "hcswif"]
 	path = hcswif
-	url = https://github.com/pooser/hcswif
+	url = https://github.com/JeffersonLab/hcswif
 	branch = master
