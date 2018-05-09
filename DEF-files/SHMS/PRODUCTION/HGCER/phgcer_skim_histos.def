@@ -1,0 +1,18 @@
+#**********************
+# Heavy Gas Cherenkov *
+#**********************
+
+#------------------------
+# SHMS HGC NPE MONITORING
+#------------------------
+
+TH2F phgcer_npe 'SHMS Heavy Gas Cherenkov Number of Photoelectrons vs. PMT Number; PMT Number; Number of Photoelectrons / 0.5 Photoelectrons' [I+1] P.hgcer.npe 4 0.5 4.5 100 0 50 P.hgcer.npe>0.0 
+TH1F phgcer_tot_npe 'SHMS Heavy Gas Cherenkov Total Number of Photoelectrons; Total Number of Photoelectrons; Number of Entries / 0.5 Photoelectrons' P.hgcer.npeSum 100 0 50 P.hgcer.npeSum>0.0 
+
+#--------------------------
+# SHMS HGC TRACK PROJECTION
+#--------------------------
+
+TH2F phgcer_xytrack 'SHMS Heavy Gas Cherenkov Tracking Y vs X; Y (cm) / 1 cm; X (cm) / 1 cm' P.hgcer.yAtCer P.hgcer.xAtCer 120 -60 60 120 -60 60 P.hgcer.xAtCer!=0.0&&P.hgcer.yAtCer!=0
+TH2F phgcer_x_vs_npe 'SHMS Heavy Gas Cherenkov X vs NPE; NPE / 0.5 PE ; X (cm) / 1 cm' P.hgcer.npeSum P.hgcer.xAtCer 100 0 50 120 -60 60 P.hgcer.xAtCer!=0.0&&P.hgcer.yAtCer!=0
+TH2F phgcer_y_vs_npe 'SHMS Heavy Gas Cherenkov Y vs NPE; NPE / 0.5 PE ; Y (cm) / 1 cm' P.hgcer.npeSum P.hgcer.yAtCer 100 0 50 120 -60 60 P.hgcer.xAtCer!=0.0&&P.hgcer.yAtCer!=0

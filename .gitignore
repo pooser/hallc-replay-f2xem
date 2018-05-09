@@ -1,5 +1,8 @@
 *~
 #*#
+*.d
+*.so
+*.pcm
 HISTOGRAMS
 MON_OUTPUT
 REPORT_OUTPUT

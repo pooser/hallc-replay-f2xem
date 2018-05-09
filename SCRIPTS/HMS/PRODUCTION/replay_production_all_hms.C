@@ -37,6 +37,11 @@ void replay_production_all_hms(Int_t RunNumber=0, Int_t MaxEvent=0) {
   gHcParms->Load("PARAM/TRIG/thms.param");
   // Load fadc debug parameters
   gHcParms->Load("PARAM/HMS/GEN/h_fadc_debug.param");
+  // Load BCM values if parameter file is found
+  ifstream bcmFile;
+  TString bcmParamFile = Form("PARAM/HMS/BCM/bcmcurrent_%d.param", RunNumber);
+  bcmFile.open(bcmParamFile);
+  if (bcmFile.is_open()) gHcParms->Load(bcmParamFile);
 
   // Load the Hall C detector map
   gHcDetectorMap = new THcDetectorMap();
@@ -72,6 +77,11 @@ void replay_production_all_hms(Int_t RunNumber=0, Int_t MaxEvent=0) {
   THaApparatus* beam = new THcRasteredBeam("H.rb", "Rastered Beamline");
   gHaApps->Add(beam);  
   // Add physics modules
+  // Add beam current monitor module
+  if (bcmFile.is_open()) {
+    THcBCMCurrent* bcm = new THcBCMCurrent("H.bcm", "BCM Module");
+    gHaPhysics->Add(bcm);
+  }
   // Calculate reaction point
   THaReactionPoint* hrp = new THaReactionPoint("H.react", "HMS reaction point", "H", "H.rb");
   gHaPhysics->Add(hrp);

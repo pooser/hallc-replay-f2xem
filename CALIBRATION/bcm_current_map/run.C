@@ -1,6 +1,6 @@
 R__LOAD_LIBRARY(ScalerCalib_C)
 
-void run(string fin="fin.root", string spec_name="H")
+void run(string fin="fin.root", string spec_name="P")
 {
 
   //H: HMS, P: SHMS
