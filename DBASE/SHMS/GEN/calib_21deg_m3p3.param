@@ -2,4 +2,4 @@
 #include "PARAM/SHMS/DC/CALIB/21deg_m3p3/pdc_calib_2527.param"
 #include "PARAM/SHMS/DC/CALIB/21deg_m3p3/pdc_tzero_per_wire_2527.param"
 #include "PARAM/SHMS/HODO/CALIB/21deg_m3p3/phodo_calib_2529.param"
-#include "PARAM/SHMS/CAL/CALIB/21deg_m3p3/pcal_calib_2524.param"
+#include "PARAM/SHMS/CAL/CALIB/21deg_m3p3/pcal_calib_2528.param"
