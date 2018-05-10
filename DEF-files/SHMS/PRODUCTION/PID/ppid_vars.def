@@ -2,8 +2,8 @@
 # PID Variables
 #**************
 
-block P.cal.eptrack
-block P.cal.eptracknorm
+block P.cal.eprtrack
+block P.cal.eprtracknorm
 block P.cal.etrack
 block P.cal.etracknorm
 block P.cal.etot
