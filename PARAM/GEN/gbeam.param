@@ -16,8 +16,7 @@ gbpm_zpos = 370.82, 224.96, 129.3 ; cm
 ;             Fast Raster calibration constants
 ;             =================================
   gusefr               = 1  
-; flag if 1 fast raster data used with average beam pos and angles in
-calculating beam position
+; flag if 1 fast raster data used with average beam pos and angles in calculating beam position
 ; if 0 then only use average beam pos and angles in calculating beam position
 ; Various fast raster quantities: gUse* are flags
 

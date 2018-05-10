@@ -24,19 +24,19 @@ TH1F pdc2u1_drifttime 'SHMS DC 2U1 Drift Time; Drift Time (ns); Number of Entrie
 # SHMS DC Drift Distance Per Plane 
 #----------------------------------
 
-TH1F pdc1u1_ddist 'SHMS 1U1 Drift Distance; Drift Distance (cm); Number of Entries' P.dc.1u1.dist 28 -0.1 0.6
-TH1F pdc1u2_ddist 'SHMS 1U2 Drift Distance; Drift Distance (cm); Number of Entries' P.dc.1u2.dist 28 -0.1 0.6
-TH1F pdc1x1_ddist 'SHMS 1X1 Drift Distance; Drift Distance (cm); Number of Entries' P.dc.1x1.dist 28 -0.1 0.6
-TH1F pdc1x2_ddist 'SHMS 1X2 Drift Distance; Drift Distance (cm); Number of Entries' P.dc.1x2.dist 28 -0.1 0.6
-TH1F pdc1v1_ddist 'SHMS 1V1 Drift Distance; Drift Distance (cm); Number of Entries' P.dc.1v1.dist 28 -0.1 0.6
-TH1F pdc1v2_ddist 'SHMS 1V2 Drift Distance; Drift Distance (cm); Number of Entries' P.dc.1v2.dist 28 -0.1 0.6
+TH1F pdc1u1_ddist 'SHMS 1U1 Drift Distance; Drift Distance (cm); Number of Entries' P.dc.1u1.dist 28 -0.1 0.6 P.dc.1u1.nhit==1
+TH1F pdc1u2_ddist 'SHMS 1U2 Drift Distance; Drift Distance (cm); Number of Entries' P.dc.1u2.dist 28 -0.1 0.6 P.dc.1u2.nhit==1
+TH1F pdc1x1_ddist 'SHMS 1X1 Drift Distance; Drift Distance (cm); Number of Entries' P.dc.1x1.dist 28 -0.1 0.6 P.dc.1x1.nhit==1
+TH1F pdc1x2_ddist 'SHMS 1X2 Drift Distance; Drift Distance (cm); Number of Entries' P.dc.1x2.dist 28 -0.1 0.6 P.dc.1x2.nhit==1
+TH1F pdc1v1_ddist 'SHMS 1V1 Drift Distance; Drift Distance (cm); Number of Entries' P.dc.1v1.dist 28 -0.1 0.6 P.dc.1v1.nhit==1
+TH1F pdc1v2_ddist 'SHMS 1V2 Drift Distance; Drift Distance (cm); Number of Entries' P.dc.1v2.dist 28 -0.1 0.6 P.dc.1v2.nhit==1
 
-TH1F pdc2u2_ddist 'SHMS 2U2 Drift Distance; Drift Distance (cm); Number of Entries' P.dc.2u2.dist 28 -0.1 0.6
-TH1F pdc2u1_ddist 'SHMS 2U1 Drift Distance; Drift Distance (cm); Number of Entries' P.dc.2u1.dist 28 -0.1 0.6
-TH1F pdc2x2_ddist 'SHMS 2X2 Drift Distance; Drift Distance (cm); Number of Entries' P.dc.2x2.dist 28 -0.1 0.6
-TH1F pdc2x1_ddist 'SHMS 2X1 Drift Distance; Drift Distance (cm); Number of Entries' P.dc.2x1.dist 28 -0.1 0.6
-TH1F pdc2v2_ddist 'SHMS 2V2 Drift Distance; Drift Distance (cm); Number of Entries' P.dc.2v2.dist 28 -0.1 0.6
-TH1F pdc2v1_ddist 'SHMS 2V1 Drift Distance; Drift Distance (cm); Number of Entries' P.dc.2v1.dist 28 -0.1 0.6
+TH1F pdc2u2_ddist 'SHMS 2U2 Drift Distance; Drift Distance (cm); Number of Entries' P.dc.2u2.dist 28 -0.1 0.6 P.dc.2u2.nhit==1
+TH1F pdc2u1_ddist 'SHMS 2U1 Drift Distance; Drift Distance (cm); Number of Entries' P.dc.2u1.dist 28 -0.1 0.6 P.dc.2u1.nhit==1
+TH1F pdc2x2_ddist 'SHMS 2X2 Drift Distance; Drift Distance (cm); Number of Entries' P.dc.2x2.dist 28 -0.1 0.6 P.dc.2x2.nhit==1
+TH1F pdc2x1_ddist 'SHMS 2X1 Drift Distance; Drift Distance (cm); Number of Entries' P.dc.2x1.dist 28 -0.1 0.6 P.dc.2x1.nhit==1
+TH1F pdc2v2_ddist 'SHMS 2V2 Drift Distance; Drift Distance (cm); Number of Entries' P.dc.2v2.dist 28 -0.1 0.6 P.dc.2v2.nhit==1
+TH1F pdc2v1_ddist 'SHMS 2V1 Drift Distance; Drift Distance (cm); Number of Entries' P.dc.2v1.dist 28 -0.1 0.6 P.dc.2v1.nhit==1
 
 #-------------------------------------------
 # SHMS DC TRACKING VARIABLES AT FOCAL PLANE

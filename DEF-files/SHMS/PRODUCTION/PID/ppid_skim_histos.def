@@ -20,4 +20,4 @@ TH2F ngc_vs_prshw      'SHMS NGC NPE Sum vs. PreSh Energy; Total PreSh Energy De
 
 TH2F pcal_shw_vs_prshw      'SHMS Shower vs. PreShower Energy Deposition; PreShower Energy / 0.01 GeV; Shower Energy / 0.01 GeV' P.cal.pr.eplane P.cal.fly.earray 400 0 4 1200 0 12 P.cal.pr.eplane>0.0&&P.cal.fly.earray>0.0 
 TH2F pcal_delta_etracknorm  'SHMS Delta vs. Cal E/p; Normalized Track Energy Deposition / 0.025; Delta / 0.25' P.cal.etracknorm P.gtr.dp 60 0. 1.5 240 -25. 35. pcut_CleanTrack
-TH2F pgtr_beta_vs_delta     'SHMS GTR #beta vs #delta p; #beta / 0.01; #delta p / 0.01' P.gtr.beta P.gtr.dp 150 0 1.5 300 -25 15 pcut_CleanTrack
+TH2F pgtr_beta_vs_delta     'SHMS GTR Beta vs Delta p; Beta / 0.01; Delta p / 0.01' P.gtr.beta P.gtr.dp 150 0 1.5 300 -25 15 pcut_CleanTrack

@@ -9,7 +9,7 @@ fname=ROOTfiles/shms_replay_scalers_${line}_-1.root
 
 echo Processing ${fname}
 
-root -b<<EOF
+root -l -b<<EOF
 .x run.C("${fname}", "P")
 EOF
 
