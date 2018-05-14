@@ -2,7 +2,15 @@
 # PID Variables
 #**************
 
+block H.cal.eprtrack
+block H.cal.eprtracknorm
+block H.cal.etrack
 block H.cal.etracknorm
+block H.cal.etot
 block H.cal.etotnorm
 block H.cal.etottracknorm
+
+block H.cer.npe
 block H.cer.npeSum
+block H.cer.goodAdcPulseAmp
+block H.cer.goodAdcTdcDiffTime

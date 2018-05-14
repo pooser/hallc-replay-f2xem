@@ -1,0 +1,21 @@
+#-------------------------------------------------------------------------------------
+# HMS PRE-SHOWER AND SHOWER (CALORIMETER) TOTAL ENERGY DEPOSITION
+# TOTAL ENERGY AND NORMALIZED ENERGY DEPOSITED IN CALORIMETER (SHOWER AND PRE-SHOWER)
+#-------------------------------------------------------------------------------------
+
+TH1F hcal_etrack 'HMS Calorimeter Total Track Energy; Track Energy Deposition (GeV); Number of Entries / 0.1 GeV' H.cal.etrack 100 0 10 H.cal.etrack>0.0 
+TH1F hcal_etracknorm 'HMS Calorimeter Normalized Track Energy; Trk. Energy Dep. (GeV) / Trk. P (GeV); Number of Entries / 0.1 ' H.cal.etracknorm 100 0 10 H.cal.etracknorm>0.0
+TH1F hcal_etracknorm_track 'HMS Calorimeter Normalized Track Energy (Ntrack > 0); Trk. Energy Dep. (GeV) / Trk. P (GeV); Number of Entries / 0.1 ' H.cal.etracknorm 100 0 10 H.cal.etracknorm>0.0&&H.dc.ntrack>0
+
+TH2F hcal_etot_etrack  'HMS Cal energy vs. track energy; Track Energy Deposition (GeV) / 0.005 GeV; Total Energy (GeV) / 0.005 GeV' H.cal.etrack H.cal.etot 1000 0. 5. 1000 0. 5. H.dc.ntrack>0
+TH2F hcal_npe_etracknorm 'HMS Cer Npe vs. Cal E/p; Normalized Track Energy Deposition / 0.005; cer NPE / 0.025 NPE' H.cal.etracknorm H.cer.npeSum 300 0. 1.5 60 0. 15. H.dc.ntrack>0
+
+#-------------------------------
+# HMS PID AND ACCEPTANCE PLOTS
+#-------------------------------
+
+TH2F hcer_vs_hpreShwr      'HMS Cer NPE Sum vs. PreSh Energy; Total PreSh Energy Deposition / 0.01 GeV; Cer NPE Sum / 0.5' H.cal.1pr.eplane H.cer.npeSum 400 0 4 80 0 40 H.cal.1pr.eplane>0.0&&H.cer.npeSum>0.0 
+
+TH2F hcal_hshwr_vs_hpreShwr 'HMS Shower vs. PreShower Energy Deposition; PreShower Energy / 0.01 GeV; Shower Energy / 0.01 GeV' H.cal.1pr.eplane (H.cal.2ta.eplane+H.cal.3ta.eplane+H.cal.4ta.eplane) 400 0 4 1200 0 12 H.cal.1pr.eplane>0.0&&(H.cal.2ta.eplane+H.cal.3ta.eplane+H.cal.4ta.eplane)>0.0 
+TH2F hcal_delta_etracknorm  'HMS Delta vs. Cal E/p; Normalized Track Energy Deposition / 0.025; Delta / 0.25' H.cal.etracknorm H.gtr.dp 60 0. 1.5 240 -25. 35. hcut_CleanTrack
+TH2F hgtr_beta_vs_delta     'HMS GTR Beta vs Delta p; Beta / 0.01; Delta p / 0.01' H.gtr.beta H.gtr.dp 150 0 1.5 300 -25 15 hcut_CleanTrack
