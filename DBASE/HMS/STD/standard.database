@@ -1,7 +1,7 @@
 0-99999
-g_ctp_parm_filename ="DBASE/HMS/GEN/general.param"
-g_ctp_kinematics_filename ="DBASE/HMS/STD/standard.kinematics"
-g_ctp_calib_filename ="DBASE/HMS/GEN/default_det_calib_files.param"
+g_ctp_parm_filename = "DBASE/HMS/GEN/general.param"
+g_ctp_kinematics_filename = "DBASE/HMS/STD/standard.kinematics"
+g_ctp_calib_filename = "DBASE/HMS/GEN/default_det_calib_files.param"
 
 303-303
 g_ctp_parm_filename ="DBASE/HMS/GEN/KPP_Spring_2017/general.param"
@@ -39,3 +39,18 @@ g_ctp_calib_filename ="DBASE/HMS/GEN/Fall_Comm_2017/calib_1235.param"
 
 1249-1249
 g_ctp_calib_filename ="DBASE/HMS/GEN/Fall_Comm_2017/calib_1249.param"
+
+1565-1591
+g_ctp_calib_filename ="DBASE/HMS/GEN/calib_21deg_m5p7.param"
+
+1592-1602
+g_ctp_calib_filename ="DBASE/HMS/GEN/calib_21deg_m5p1.param"
+
+1603-1621
+g_ctp_calib_filename ="DBASE/HMS/GEN/calib_21deg_m4p5.param"
+
+1622-1633
+g_ctp_calib_filename ="DBASE/HMS/GEN/calib_21deg_m4p0.param"
+
+1634-1641
+g_ctp_calib_filename ="DBASE/HMS/GEN/calib_21deg_m3p3.param"
