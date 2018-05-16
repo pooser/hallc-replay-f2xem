@@ -5,7 +5,7 @@ list=$1
 while read line
 do
 
-fname=ROOTfiles/shms_replay_scalers_${line}_-1.root
+fname=ROOTfiles/shms-f2-xem-scalers/shms_replay_scalers_${line}_-1.root
 
 echo Processing ${fname}
 
@@ -15,7 +15,7 @@ EOF
 
 [ ! -d "shms" ] && `mkdir shms`
 
-mv bcmcurrent* ./shms/
+mv bcmcurrent_${line}.param ./shms/
 
 echo Created bcmcurrent_${line}.param
 

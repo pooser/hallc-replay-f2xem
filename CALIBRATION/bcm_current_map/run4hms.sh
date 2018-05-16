@@ -5,7 +5,7 @@ list=$1
 while read line
 do
 
-fname=ROOTfiles/hms_replay_scalers_${line}_-1.root
+fname=ROOTfiles/hms-f2-xem-scalers/hms_replay_scalers_${line}_-1.root
 
 echo Processing ${fname}
 
@@ -15,7 +15,7 @@ EOF
 
 [ ! -d "hms" ] && `mkdir hms`
 
-mv bcmcurrent* ./hms/
+mv bcmcurrent_${line}.param ./hms/
 
 echo Created bcmcurrent_${line}.param
 

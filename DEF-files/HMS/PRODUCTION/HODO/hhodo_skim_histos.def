@@ -1,0 +1,17 @@
+#*****************
+# HMS HODOSCOPES *
+#*****************
+
+#---------------------------------------------------------------
+# HMS HODO TRACKING, TIMING  AND  Particle ID (PID) - BETA (v/c) 
+#---------------------------------------------------------------
+
+TH1F hhodo_beta_notrack 'HMS Hodo Calculated Beta Without Track Info; Beta; Number of Entries / 0.015' H.hod.betanotrack 100 0 1.5 
+TH1F hhodo_beta 'HMS Hodo Beta; Beta; Number of Entries / 0.015' H.hod.beta 100 0 1.5 
+TH1F hhodo_fpHitsTime 'HMS Hodo Focal Plane Time; Focal Plane Time (ns); Number of Entries / 1 ns' H.hod.fpHitsTime 90 0 90 
+TH1F hhodo_starttime 'HMS Hodo Start Time; Start Time (ns); Number of Entries / 1ns' H.hod.starttime 90 0 90
+TH1F hhodo_good_startime 'HMS Hodo Good Start Flag; Good Start Flag (=1 is good); Number of Entries' H.hod.goodstarttime 5 0 5
+TH1F hhodo_1x_fptime 'HMS 1x fptime' H.hod.1x.fptime 100 0. 50. H.dc.ntrack>0
+TH1F hhodo_1y_fptime 'HMS 1y fptime' H.hod.1y.fptime 100 0. 50. H.dc.ntrack>0
+TH1F hhodo_2x_fptime 'HMS 2x fptime' H.hod.2x.fptime 100 0. 50. H.dc.ntrack>0
+TH1F hhodo_2y_fptime 'HMS 2y fptime' H.hod.2y.fptime 100 0. 50. H.dc.ntrack>0
