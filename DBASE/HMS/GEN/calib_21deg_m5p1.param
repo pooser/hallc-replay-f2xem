@@ -2,4 +2,4 @@
 #include "PARAM/HMS/DC/CALIB/21deg_m5p1/hdc_calib_1597.param"
 #include "PARAM/HMS/DC/CALIB/21deg_m5p1/hdc_tzero_per_wire_1597.param"
 #include "PARAM/HMS/HODO/CALIB/21deg_m5p1/hhodo_calib_1597.param"
-;#include "PARAM/HMS/CAL/CALIB/21deg_m5p1/hcal_calib_1597.param"
+#include "PARAM/HMS/CAL/CALIB/21deg_m5p1/hcal_calib_1597.param"
