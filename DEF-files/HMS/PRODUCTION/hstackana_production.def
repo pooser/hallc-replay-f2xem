@@ -1,7 +1,7 @@
 # Detector skim histos
 #include "DEF-files/HMS/PRODUCTION/CER/hcer_skim_histos.def"
 #include "DEF-files/HMS/PRODUCTION/DC/hdc_skim_histos.def"
-#include "DEF-files/HMS/PRODUCTION/HODO/hhodo_histos.def"
+#include "DEF-files/HMS/PRODUCTION/HODO/hhodo_skim_histos.def"
 
 
 # Kinematic skim histos

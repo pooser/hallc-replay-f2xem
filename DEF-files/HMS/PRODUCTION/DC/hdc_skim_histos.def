@@ -24,19 +24,19 @@ TH1F hdc2u1_drifttime 'HMS DC 2U1 Drift Time; Drift Time (ns); Number of Entries
 # HMS DC Drift Distance Per Plane 
 #----------------------------------
 
-TH1F hdc1u1_ddist 'HMS 1U1 Drift Distance; Drift Distance (cm); Number of Entries' H.dc.1u1.dist 28 -0.1 0.6
-TH1F hdc1u2_ddist 'HMS 1U2 Drift Distance; Drift Distance (cm); Number of Entries' H.dc.1u2.dist 28 -0.1 0.6
-TH1F hdc1x1_ddist 'HMS 1X1 Drift Distance; Drift Distance (cm); Number of Entries' H.dc.1x1.dist 28 -0.1 0.6
-TH1F hdc1x2_ddist 'HMS 1X2 Drift Distance; Drift Distance (cm); Number of Entries' H.dc.1x2.dist 28 -0.1 0.6
-TH1F hdc1v1_ddist 'HMS 1V1 Drift Distance; Drift Distance (cm); Number of Entries' H.dc.1v1.dist 28 -0.1 0.6
-TH1F hdc1v2_ddist 'HMS 1V2 Drift Distance; Drift Distance (cm); Number of Entries' H.dc.1v2.dist 28 -0.1 0.6
+TH1F hdc1u1_ddist 'HMS 1U1 Drift Distance; Drift Distance (cm); Number of Entries' H.dc.1u1.dist 28 -0.1 0.6 H.dc.1u1.nhit==1
+TH1F hdc1u2_ddist 'HMS 1U2 Drift Distance; Drift Distance (cm); Number of Entries' H.dc.1u2.dist 28 -0.1 0.6 H.dc.1u2.nhit==1
+TH1F hdc1x1_ddist 'HMS 1X1 Drift Distance; Drift Distance (cm); Number of Entries' H.dc.1x1.dist 28 -0.1 0.6 H.dc.1x2.nhit==1
+TH1F hdc1x2_ddist 'HMS 1X2 Drift Distance; Drift Distance (cm); Number of Entries' H.dc.1x2.dist 28 -0.1 0.6 H.dc.1x2.nhit==1
+TH1F hdc1v1_ddist 'HMS 1V1 Drift Distance; Drift Distance (cm); Number of Entries' H.dc.1v1.dist 28 -0.1 0.6 H.dc.1v1.nhit==1
+TH1F hdc1v2_ddist 'HMS 1V2 Drift Distance; Drift Distance (cm); Number of Entries' H.dc.1v2.dist 28 -0.1 0.6 H.dc.1v2.nhit==1
 
-TH1F hdc2u2_ddist 'HMS 2U2 Drift Distance; Drift Distance (cm); Number of Entries' H.dc.2u2.dist 28 -0.1 0.6
-TH1F hdc2u1_ddist 'HMS 2U1 Drift Distance; Drift Distance (cm); Number of Entries' H.dc.2u1.dist 28 -0.1 0.6
-TH1F hdc2x2_ddist 'HMS 2X2 Drift Distance; Drift Distance (cm); Number of Entries' H.dc.2x2.dist 28 -0.1 0.6
-TH1F hdc2x1_ddist 'HMS 2X1 Drift Distance; Drift Distance (cm); Number of Entries' H.dc.2x1.dist 28 -0.1 0.6
-TH1F hdc2v2_ddist 'HMS 2V2 Drift Distance; Drift Distance (cm); Number of Entries' H.dc.2v2.dist 28 -0.1 0.6
-TH1F hdc2v1_ddist 'HMS 2V1 Drift Distance; Drift Distance (cm); Number of Entries' H.dc.2v1.dist 28 -0.1 0.6
+TH1F hdc2u2_ddist 'HMS 2U2 Drift Distance; Drift Distance (cm); Number of Entries' H.dc.2u2.dist 28 -0.1 0.6 H.dc.2u2.nhit==1
+TH1F hdc2u1_ddist 'HMS 2U1 Drift Distance; Drift Distance (cm); Number of Entries' H.dc.2u1.dist 28 -0.1 0.6 H.dc.2u1.nhit==1
+TH1F hdc2x2_ddist 'HMS 2X2 Drift Distance; Drift Distance (cm); Number of Entries' H.dc.2x2.dist 28 -0.1 0.6 H.dc.2x2.nhit==1
+TH1F hdc2x1_ddist 'HMS 2X1 Drift Distance; Drift Distance (cm); Number of Entries' H.dc.2x1.dist 28 -0.1 0.6 H.dc.2x1.nhit==1
+TH1F hdc2v2_ddist 'HMS 2V2 Drift Distance; Drift Distance (cm); Number of Entries' H.dc.2v2.dist 28 -0.1 0.6 H.dc.2v2.nhit==1
+TH1F hdc2v1_ddist 'HMS 2V1 Drift Distance; Drift Distance (cm); Number of Entries' H.dc.2v1.dist 28 -0.1 0.6 H.dc.2v1.nhit==1
 
 #-------------------------------------------
 # HMS DC TRACKING VARIABLES AT FOCAL PLANE
