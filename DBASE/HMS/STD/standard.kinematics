@@ -63,7 +63,7 @@ htheta_lab = -21.00
 hpcentral = 5.7
 
 1580-1581
-gpbeam = 10.589 cd
+gpbeam = 10.589
 gtargmass_amu=11.01
 hpartmass = 0.00051099
 htheta_lab = -21.00
