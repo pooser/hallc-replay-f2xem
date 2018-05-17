@@ -34,6 +34,8 @@ hpartmass = 0.00051099
 htheta_lab = -21.00
 hpcentral = 5.7
 
+#F2/EMC run
+
 1562-1572
 gpbeam = 10.589 
 gtargmass_amu=1.00794
@@ -76,19 +78,12 @@ hpartmass = 0.00051099
 htheta_lab = -21.00
 hpcentral = 5.7
 
-1587 - 1589
+1587 - 1591
 gpbeam = 10.589 
 gtargmass_amu=12.0107
 hpartmass = 0.00051099
 htheta_lab = -21.00
 hpcentral = 5.7
-
-1590 - 1591
-gpbeam = 10.589 
-gtargmass_amu=12.0107
-hpartmass = 0.00051099
-htheta_lab = -21.00
-hpcentral = 5.1
 
 1592 - 1593
 gpbeam = 10.589 
@@ -237,7 +232,7 @@ hpartmass = 0.00051099
 htheta_lab = -21.00
 hpcentral = 3.3
 
-1636 - 1639
+1637 - 1639
 gpbeam = 10.589
 gtargmass_amu = 1.00794
 hpartmass = 0.00051099
