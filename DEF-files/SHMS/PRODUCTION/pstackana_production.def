@@ -16,6 +16,7 @@
 #include "DEF-files/SHMS/PRODUCTION/GTR/pgtr_vars.def"
 #include "DEF-files/SHMS/PRODUCTION/PID/ppid_vars.def"
 #include "DEF-files/SHMS/PRODUCTION/KIN/pkin_vars.def"
+#include "DEF-files/SHMS/PRODUCTION/REACT/preact_vars.def"
 
 # EPICS leafs
 #include "DEF-files/SHMS/PRODUCTION/EPICS/pepics_vars.def"
