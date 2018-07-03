@@ -13,14 +13,21 @@
 # Beam energy measurement (https://logbooks.jlab.org/entry/3569862) 
 # gives gpbeam = 10.589 for 5th pass running
 
-1553-1555
+1553-1554
 gpbeam = 10.589 
 gtargmass_amu=1.00794
 hpartmass = 0.00051099
 htheta_lab = -20.995
 hpcentral = 6.2
 
-1556-1559
+1555-1556
+gpbeam = 10.589 
+gtargmass_amu=26.98
+hpartmass = 0.00051099
+htheta_lab = -20.995
+hpcentral = 6.2
+
+1557-1559
 gpbeam = 10.589 
 gtargmass_amu=1.00794
 hpartmass = 0.00051099
@@ -520,7 +527,7 @@ hpartmass = 0.00051099
 htheta_lab = -58.99
 hpcentral = 1.18
 
-1810 - 1815
+1810 - 1813
 gpbeam = 10.589
 gtargmass_amu = 1.00794
 hpartmass = 0.00051099
@@ -534,7 +541,7 @@ hpartmass = 0.00051099
 htheta_lab = -58.99
 hpcentral = 1.18
 
-1814 - 1822
+1815 - 1822
 gpbeam = 10.589
 gtargmass_amu = 2.014101
 hpartmass = 0.00051099
@@ -822,16 +829,23 @@ hpartmass = 0.00051099
 htheta_lab = -58.99
 hpcentral = 1.05
 
-1982-1984
+1982-1982
 gpbeam = 10.589
 gtargmass_amu = 26.9815391
 hpartmass = 0.00051099
 htheta_lab = -58.99
 hpcentral = 1.05
 
-1985-1986
+1983-1983
 gpbeam = 10.589
-gtargmass_amu = 26.9815391
+gtargmass_amu = 1.00794
+hpartmass = 0.00051099
+htheta_lab = -58.99
+hpcentral = 1.05
+
+1984-1986
+gpbeam = 10.589
+gtargmass_amu = 12.0107
 hpartmass = 0.00051099
 htheta_lab = -58.99
 hpcentral = 1.2
