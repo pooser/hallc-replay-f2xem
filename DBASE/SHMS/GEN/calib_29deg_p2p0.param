@@ -1,0 +1,5 @@
+; SHMS calibration files for 29 deg, p = 2.0 GeV, runs 2881-2884
+#include "PARAM/SHMS/DC/CALIB/29deg_p2p0/pdc_calib_2884.param"
+#include "PARAM/SHMS/DC/CALIB/29deg_p2p0/pdc_tzero_per_wire_2884.param"
+#include "PARAM/SHMS/HODO/CALIB/29deg_p2p0/phodo_calib_2884.param"
+#include "PARAM/SHMS/CAL/CALIB/29deg_p2p0/pcal_calib_2884.param"

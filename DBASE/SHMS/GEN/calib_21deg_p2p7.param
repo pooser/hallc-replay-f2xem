@@ -1,0 +1,5 @@
+; SHMS calibration files for 21 deg, p = 2.7 GeV, runs 3085-3101
+#include "PARAM/SHMS/DC/CALIB/21deg_p2p7/pdc_calib_3086.param"
+#include "PARAM/SHMS/DC/CALIB/21deg_p2p7/pdc_tzero_per_wire_3086.param"
+#include "PARAM/SHMS/HODO/CALIB/21deg_p2p7/phodo_calib_3086.param"
+#include "PARAM/SHMS/CAL/CALIB/21deg_p2p7/pcal_calib_3086.param"

@@ -1,0 +1,5 @@
+; SHMS calibration files for 39 deg, p = -2.5 GeV, runs 2564-2633
+#include "PARAM/SHMS/DC/CALIB/39deg_m2p5/pdc_calib_2607.param"
+#include "PARAM/SHMS/DC/CALIB/39deg_m2p5/pdc_tzero_per_wire_2607.param"
+#include "PARAM/SHMS/HODO/CALIB/39deg_m2p5/phodo_calib_2607.param"
+#include "PARAM/SHMS/CAL/CALIB/39deg_m2p5/pcal_calib_2607.param"
