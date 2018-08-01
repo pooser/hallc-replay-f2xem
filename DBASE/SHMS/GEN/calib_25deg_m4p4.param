@@ -1,5 +1,2 @@
 ; SHMS calibration files for 25 deg, p = -4.4 GeV, runs 3010-3037
-#include "PARAM/SHMS/DC/CALIB/25deg_m4p4/pdc_calib_3021.param"
-#include "PARAM/SHMS/DC/CALIB/25deg_m4p4/pdc_tzero_per_wire_3021.param"
-#include "PARAM/SHMS/HODO/CALIB/25deg_m4p4/phodo_calib_3021.param"
 #include "PARAM/SHMS/CAL/CALIB/25deg_m4p4/pcal_calib_3021.param"
