@@ -14,3 +14,66 @@ g_ctp_calib_filename = "DBASE/SHMS/GEN/calib_21deg_m3p3.param"
 
 2547-2563
 g_ctp_calib_filename = "DBASE/SHMS/GEN/calib_21deg_m2p7.param"
+
+2564-2633
+g_ctp_calib_filename = "DBASE/SHMS/GEN/calib_39deg_m2p5.param"
+
+2634-2688
+g_ctp_calib_filename = "DBASE/SHMS/GEN/calib_39deg_m2p0.param"
+
+2689-2710
+g_ctp_calib_filename = "DBASE/SHMS/GEN/calib_39deg_m1p6.param"
+
+2712-2725
+g_ctp_calib_filename = "DBASE/SHMS/GEN/calib_39deg_m1p3.param"
+
+2726-2756
+g_ctp_calib_filename = "DBASE/SHMS/GEN/calib_33deg_m3p2.param"
+
+2758-2782
+g_ctp_calib_filename = "DBASE/SHMS/GEN/calib_33deg_m2p6.param"
+
+2784-2799
+g_ctp_calib_filename = "DBASE/SHMS/GEN/calib_33deg_m2p1.param"
+
+2802-2858
+g_ctp_calib_filename = "DBASE/SHMS/GEN/calib_33deg_m1p7.param"
+
+2861-2866
+g_ctp_calib_filename = "DBASE/SHMS/GEN/calib_39deg_p1p8.param"
+
+2867-2874
+g_ctp_calib_filename = "DBASE/SHMS/GEN/calib_39deg_p1p3.param"
+
+2875-2880
+g_ctp_calib_filename = "DBASE/SHMS/GEN/calib_29deg_p2p7.param"
+
+2881-2884
+g_ctp_calib_filename = "DBASE/SHMS/GEN/calib_29deg_p2p0.param"
+
+2889-2913
+g_ctp_calib_filename = "DBASE/SHMS/GEN/calib_29deg_m3p7.param"
+
+2914-2964
+g_ctp_calib_filename = "DBASE/SHMS/GEN/calib_29deg_m3p0.param"
+
+2965-2990
+g_ctp_calib_filename = "DBASE/SHMS/GEN/calib_29deg_m2p4.param"
+
+2992-3007
+g_ctp_calib_filename = "DBASE/SHMS/GEN/calib_29deg_m2p0.param"
+
+3010-3037
+g_ctp_calib_filename = "DBASE/SHMS/GEN/calib_25deg_m4p4.param"
+
+3038-3059
+g_ctp_calib_filename = "DBASE/SHMS/GEN/calib_25deg_m3p5.param"
+
+3061-3071
+g_ctp_calib_filename = "DBASE/SHMS/GEN/calib_25deg_m3p0.param"
+
+3072-3084
+g_ctp_calib_filename = "DBASE/SHMS/GEN/calib_25deg_m2p5.param"
+
+3085-3101
+g_ctp_calib_filename = "DBASE/SHMS/GEN/calib_21deg_p2p7.param"

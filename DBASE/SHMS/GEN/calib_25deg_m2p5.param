@@ -1,0 +1,2 @@
+; SHMS calibration files for 25 deg, p = -2.5 GeV, runs 3072-3084
+#include "PARAM/SHMS/CAL/CALIB/25deg_m2p5/pcal_calib_3079.param"

@@ -1,0 +1,2 @@
+; SHMS calibration files for 39 deg, p = 1.3 GeV, runs 2867-2874
+#include "PARAM/SHMS/CAL/CALIB/39deg_p1p3/pcal_calib_2873.param"
