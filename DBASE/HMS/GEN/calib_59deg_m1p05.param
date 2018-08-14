@@ -1,2 +1,2 @@
 ;HMS calibration files for 59 deg, p = -1.05 GeV, runs 1848-1860
-#include "PARAM/HMS/CAL/CALIB/59deg_m1p05/hcal_calib_1850.param"
+#include "PARAM/HMS/CAL/CALIB/59deg_m1p05/hcal_calib_m1p05.param"
