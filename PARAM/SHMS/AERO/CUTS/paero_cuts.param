@@ -20,7 +20,7 @@ paero_adc_tdc_offset = 200.
 ; NPE Threshold for "good" hit (for measureing effic.)
 paero_npe_thresh = 0.5
 
-paero_adcPosTimeWindowMin = -40.
-paero_adcPosTimeWindowMax = 10.
-paero_adcNegTimeWindowMin = 140.
-paero_adcNegTimeWindowMax = 210.
+paero_adcPosTimeWindowMin = -1000., -1000., -1000., -1000., -1000., -1000., -1000.
+paero_adcPosTimeWindowMax = 1000., 1000., 1000., 1000., 1000., 1000., 1000.
+paero_adcNegTimeWindowMin = -1000., -1000., -1000., -1000., -1000., -1000., -1000.
+paero_adcNegTimeWindowMax = 1000., 1000., 1000., 1000., 1000., 1000., 1000.
