@@ -42,3 +42,5 @@ cminch=2.54
 #include "PARAM/SHMS/HGCER/CALIB/phgcer_calib.param"
 #include "PARAM/SHMS/AERO/CALIB/paero_calib.param"
 #include "PARAM/SHMS/CAL/CALIB/pcal_calib.param"
+#include "PARAM/SHMS/HODO/CALIB/phodo_TWcalib.param"
+#include "PARAM/SHMS/HODO/CALIB/phodo_Vpcalib.param"
