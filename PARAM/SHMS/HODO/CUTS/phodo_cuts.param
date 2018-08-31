@@ -130,4 +130,4 @@ ptof_tolerance = 100.0
 ;    phodo_pos_coord and phodo_neg_coord are not yet used                                                                                                    
 phodo_slop = 2.,  2.,  4.,  4.    
 
-ptofusinginvadc=1
+ptofusinginvadc=0
