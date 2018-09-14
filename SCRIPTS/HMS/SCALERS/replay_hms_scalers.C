@@ -45,7 +45,7 @@ void replay_hms_scalers(Int_t RunNumber=0, Int_t MaxEvent=0) {
   TRG->AddDetector(hms);
 
   // Add event handler for EPICS events
-  THaEpicsEvtHandler *hcepics = new THaEpicsEvtHandler("epics", "HC EPICS event type 180");
+  THaEpicsEvtHandler *hcepics = new THaEpicsEvtHandler("epics", "HC EPICS event type 181");
   gHaEvtHandlers->Add(hcepics);
   // Add event handler for scaler events
   THcScalerEvtHandler *hscaler = new THcScalerEvtHandler("H","Hall C scaler event type 129");
@@ -91,7 +91,7 @@ void replay_hms_scalers(Int_t RunNumber=0, Int_t MaxEvent=0) {
                                 // 2 = counter is event number
   analyzer->SetEvent(event);
   // Set EPICS event type
-  analyzer->SetEpicsEvtType(180);
+  analyzer->SetEpicsEvtType(181);
   // Define crate map
   analyzer->SetCrateMapFileName("MAPS/db_cratemap.dat");
   // Define output ROOT file
