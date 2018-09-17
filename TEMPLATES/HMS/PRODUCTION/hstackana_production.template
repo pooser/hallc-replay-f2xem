@@ -4,9 +4,9 @@
 **************************
 
 Run Num     : {gen_run_number}
-Momentum    : {ppcentral:%.3f}
+Momentum    : {hpcentral:%.3f}
 Target AMU  : {gtargmass_amu:%.2f}
-Spec Theta  : {ptheta_lab:%.4f}
+Spec Theta  : {htheta_lab:%.4f}
 Beam Energy : {gpbeam:%.3f}
 
 1 MHz Pulses : {H.1MHz.scaler}
@@ -366,7 +366,6 @@ Tracks found    = scleantrack = {hcut_CleanTrack.npassed}
 //Tracks passing chisquared cut = (hstat_cal_numevents:%7d) (in previous template, do we need this here?)
 
 hmsPreShower	     Counts: {H.cal.stat_trksum1} eff : {H.cal.stat_hitsum1 / H.cal.stat_trksum1}
-hmsShowerArray	     Counts: {H.cal.stat_trksum_array} eff : {H.cal.stat_hitsum_array / H.cal.stat_trksum_array}
 
 hA	     Counts: {H.cal.stat_trksum1} eff : {H.cal.stat_hitsum1 / H.cal.stat_trksum1}
 hB	     Counts: {H.cal.stat_trksum2} eff : {H.cal.stat_hitsum2 / H.cal.stat_trksum2}

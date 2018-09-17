@@ -16,7 +16,11 @@ void replay_production_hms(Int_t RunNumber=0, Int_t MaxEvent=0) {
   }
 
   // Create file name patterns.
-  const char* RunFileNamePattern = "hms_all_%05d.dat";
+  const char* RunFileNamePattern;
+  if (RunNumber == 1566 || RunNumber == 1598 || RunNumber == 1608 || RunNumber == 1618)
+    RunFileNamePattern = "hms_all_%05d_filtered.dat";
+  else 
+    RunFileNamePattern = "hms_all_%05d.dat";
   vector<TString> pathList;
   pathList.push_back(".");
   pathList.push_back("./raw");
@@ -83,7 +87,7 @@ void replay_production_hms(Int_t RunNumber=0, Int_t MaxEvent=0) {
     gHaPhysics->Add(bcm);
   }
   // Calculate reaction point
-  THaReactionPoint* hrp = new THaReactionPoint("H.react", "HMS reaction point", "H", "H.rb");
+  THcReactionPoint* hrp = new THcReactionPoint("H.react", "HMS reaction point", "H", "H.rb");
   gHaPhysics->Add(hrp);
   // Calculate extended target corrections
   THcExtTarCor* hext = new THcExtTarCor("H.extcor", "HMS extended target corrections", "H", "H.react");
@@ -147,8 +151,10 @@ void replay_production_hms(Int_t RunNumber=0, Int_t MaxEvent=0) {
                               // 2 = counter is event number
 
   analyzer->SetEvent(event);
+  // Set CODA version
+  analyzer->SetCodaVersion(2);
   // Set EPICS event type
-  analyzer->SetEpicsEvtType(180);
+  analyzer->SetEpicsEvtType(181);
   // Define crate map
   analyzer->SetCrateMapFileName("MAPS/db_cratemap.dat");
   // Define output ROOT file

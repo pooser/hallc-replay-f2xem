@@ -16,7 +16,11 @@ void replay_hms_scalers(Int_t RunNumber=0, Int_t MaxEvent=0) {
   }
 
   // Create file name patterns.
-  const char* RunFileNamePattern = "hms_all_%05d.dat";
+  const char* RunFileNamePattern;
+  if (RunNumber == 1566 || RunNumber == 1598 || RunNumber == 1608 || RunNumber == 1618)
+    RunFileNamePattern = "hms_all_%05d_filtered.dat";
+  else 
+    RunFileNamePattern = "hms_all_%05d.dat";
   vector<TString> pathList;
   pathList.push_back(".");
   pathList.push_back("./raw");
@@ -90,6 +94,8 @@ void replay_hms_scalers(Int_t RunNumber=0, Int_t MaxEvent=0) {
                                 // 1 = counter is # of all decode reads
                                 // 2 = counter is event number
   analyzer->SetEvent(event);
+  // Set CODA version
+  analyzer->SetCodaVersion(2);
   // Set EPICS event type
   analyzer->SetEpicsEvtType(181);
   // Define crate map

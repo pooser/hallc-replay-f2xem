@@ -87,11 +87,11 @@ hhodo_NegAdcTimeWindowMax = 20., 20., 21., 20.
 ; hstart_time_slop    1/2 width of time window                                  
    hstart_time_slop = 100.                                                       
 ; hscin_tdc_min       minimum tdc value in hms scin                             
-    hscin_tdc_min = -500                                                           
+   hscin_tdc_min = -500                                                           
 ; hscin_tdc_max       maximum allowed tdc value                                 
    hscin_tdc_max = 4000                                                         
-; hscin_tdc_to_time   scin tdc time per channel                                 
-   hscin_tdc_to_time = 0.1                                                  
+; hscin_tdc_to_time scin tdc time per channel (https://logbooks.jlab.org/entry/3574348)
+   hscin_tdc_to_time = 0.09766 
 ; tof and you figured out good values
    htof_tolerance = 100.0
 ;                                                                               

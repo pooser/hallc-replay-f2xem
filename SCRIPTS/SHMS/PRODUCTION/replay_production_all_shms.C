@@ -85,7 +85,7 @@ void replay_production_all_shms (Int_t RunNumber = 0, Int_t MaxEvent = 0) {
     gHaPhysics->Add(bcm);
   }
   // Calculate reaction point
-  THaReactionPoint* prp = new THaReactionPoint("P.react", "SHMS reaction point", "P", "P.rb");
+  THcReactionPoint* prp = new THcReactionPoint("P.react", "SHMS reaction point", "P", "P.rb");
   gHaPhysics->Add(prp);
   // Calculate extended target corrections
   THcExtTarCor* pext = new THcExtTarCor("P.extcor", "HMS extended target corrections", "P", "P.react");
@@ -149,7 +149,7 @@ void replay_production_all_shms (Int_t RunNumber = 0, Int_t MaxEvent = 0) {
                               // 2 = counter is event number
   analyzer->SetEvent(event);
   // Set EPICS event type
-  analyzer->SetEpicsEvtType(180);
+  analyzer->SetEpicsEvtType(181);
   // Define crate map
   analyzer->SetCrateMapFileName("MAPS/db_cratemap.dat");
   // Define output ROOT file
