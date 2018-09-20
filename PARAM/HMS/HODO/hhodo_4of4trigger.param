@@ -29,7 +29,7 @@ hhodo_adc_mode=1
 ;                                                                               
      hhodo_slop     =    2.,  2.,  4.,  4.                                      
 ;   
-htofusinginvadc=1
+htofusinginvadc=0
 ;                                                                               
                                                                                 
 hhodo_pos_invadc_offset =   0.000,   0.0000,  0.000,   0.000
