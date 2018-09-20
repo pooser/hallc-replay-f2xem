@@ -102,7 +102,7 @@ hhodo_NegAdcTimeWindowMax = 20., 20., 21., 20.
 ;                                                                               
      hhodo_slop     =    2.,  2.,  4.,  4.                                      
 ;   
-htofusinginvadc=1
+htofusinginvadc=0
 hhodo_pos_ped_limit = 1000,1000,1000,1000,1000,1000,1000,1000                   
                       1000,1000,1000,1000,1000,1000,1000,1000                   
                       1000,1000,1000,1000,1000,1000,1000,1000                   
