@@ -78,11 +78,14 @@ g_ctp_calib_filename = "DBASE/SHMS/GEN/calib_25deg_m2p5.param"
 3085-3101
 g_ctp_calib_filename = "DBASE/SHMS/GEN/calib_21deg_p2p7.param"
 
-3131-3163
-g_ctp_calib_filename = "DBASE/SHMS/GEN/calib_8deg_m9p8.param"
-
 3102-3121
 g_ctp_calib_filename = "DBASE/SHMS/GEN/boiling_calib_15deg.param"
 
-3122-3226
+3122-3130
+g_ctp_calib_filename = "DBASE/SHMS/GEN/boiling_calib_25deg.param"
+
+3131-3163
+g_ctp_calib_filename = "DBASE/SHMS/GEN/calib_8deg_m9p8.param"
+
+3204-3226
 g_ctp_calib_filename = "DBASE/SHMS/GEN/boiling_calib_25deg.param"
