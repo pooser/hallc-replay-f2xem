@@ -150,7 +150,8 @@ void replay_production_all_hms(Int_t RunNumber=0, Int_t MaxEvent=0) {
                               // 1 = counter is # of all decode reads
                               // 2 = counter is event number
   analyzer->SetEvent(event);
-  
+  // Set CODA version
+  analyzer->SetCodaVersion(2);
   // Set EPICS event type
   analyzer->SetEpicsEvtType(181);
   // Define crate map
