@@ -4,7 +4,7 @@
  hdc_version = 1
 
 ; Conversion factor from TDC clicks to ns (https://logbooks.jlab.org/entry/3574348)
-hdc_tdc_time_per_channel = -0.09766
+hdc_tdc_time_per_channel = -0.1
 
 ; Number of drift chambers.
 hdc_num_chambers = 2
