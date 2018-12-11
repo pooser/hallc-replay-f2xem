@@ -13,6 +13,14 @@
 # Beam energy measurement (https://logbooks.jlab.org/entry/3569862) 
 # gives gpbeam = 10.589 for 5th pass running
 
+# Dead-time Scan
+1437-1446
+gpbeam = 10.589 
+gtargmass_amu = 12.0107
+hpartmass = 0.00051099
+htheta_lab = -22.0
+hpcentral = 2.131
+
 # HMS saturation studies 
 
 1553-1554
