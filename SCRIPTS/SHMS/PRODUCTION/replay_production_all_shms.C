@@ -133,6 +133,9 @@ void replay_production_all_shms (Int_t RunNumber = 0, Int_t MaxEvent = 0) {
   // We just set up one, but this could be many.
   THcRun* run = new THcRun( pathList, Form(RunFileNamePattern, RunNumber) );
 
+  // THaDecData* decData = new THaDecData("D", "Decoder for raw data");
+  // gHaApps->Add(decData);
+
   // Set to read in Hall C run database parameters
   run->SetRunParamClass("THcRunParameters");
   
