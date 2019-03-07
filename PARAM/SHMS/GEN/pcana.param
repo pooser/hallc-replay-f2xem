@@ -6,4 +6,5 @@
 ;p_recon_coeff_filename = "DATFILES/shms-2017-optimized.dat"
 ;p_recon_coeff_filename = "DATFILES/shms-2017-optimized_2plow.dat"
 ;p_recon_coeff_filename = "DATFILES/shms-2017-optimized_2plow_delta_cosy_quads_p18.dat"
-p_recon_coeff_filename = "DATFILES/shms-2017-optimized_delta_newfit3.dat"
+;p_recon_coeff_filename = "DATFILES/shms-2017-optimized_delta_newfit3.dat"
+p_recon_coeff_filename = "DATFILES/shms-2019-newopt-Jan19.dat"
