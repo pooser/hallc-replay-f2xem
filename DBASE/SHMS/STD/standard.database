@@ -89,3 +89,6 @@ g_ctp_calib_filename = "DBASE/SHMS/GEN/calib_8deg_m9p8.param"
 
 3204-3226
 g_ctp_calib_filename = "DBASE/SHMS/GEN/boiling_calib_25deg.param"
+
+7197-7261
+g_ctp_calib_filename = "DBASE/SHMS/GEN/calib_jpsi.param"
