@@ -1,0 +1,73 @@
+pdcref1  crate 6  6  79 
+pdcref2  crate 6  7  79 
+pdcref3  crate 6  8  79 
+pdcref4  crate 6  9  79 
+pdcref5  crate 6 10  79 
+pdcref6  crate 6 11  47
+pdcref7  crate 6 12  47 
+pdcref8  crate 6 13  47 
+pdcref9  crate 6 14  15 
+pdcref10 crate 6 15  47
+hdcref1  crate 3  8  15
+hdcref2  crate 3 16  63
+hdcref3  crate 3  4 111
+hdcref4  crate 3 13  95
+
+pT1   crate 2 20 15
+pT2   crate 2 19 31
+pT3   crate 2 19 38
+pedtm crate 2 19 42
+
+ptrig1_roc2 crate 2 19 48
+ptrig2_roc2 crate 2 19 49
+ptrig3_roc2 crate 2 19 50
+ptrig4_roc2 crate 2 19 51
+ptrig5_roc2 crate 2 19 52
+ptrig6_roc2 crate 2 19 53
+htrig1_roc2 crate 2 19 58
+htrig2_roc2 crate 2 19 59
+htrig3_roc2 crate 2 19 60
+htrig4_roc2 crate 2 19 61
+htrig5_roc2 crate 2 19 62
+htrig6_roc2 crate 2 19 63
+
+htrig1_roc1 crate 1 2 26
+htrig2_roc1 crate 1 2 27
+htrig3_roc1 crate 1 2 28
+htrig4_roc1 crate 1 2 29
+htrig5_roc1 crate 1 2 30
+htrig6_roc1 crate 1 2 31
+ptrig1_roc1 crate 1 2 16
+ptrig2_roc1 crate 1 2 17
+ptrig3_roc1 crate 1 2 18
+ptrig4_roc1 crate 1 2 19
+ptrig5_roc1 crate 1 2 20
+ptrig6_roc1 crate 1 2 21
+
+ppre40_roc2  crate 2 19 80
+ppre100_roc2 crate 2 19 81
+ppre150_roc2 crate 2 19 82
+ppre200_roc2 crate 2 19 83
+hpre40_roc2  crate 2 19 88
+hpre100_roc2 crate 2 19 89
+hpre150_roc2 crate 2 19 90
+hpre200_roc2 crate 2 19 91
+
+ppre40_roc1  crate 1 2 64
+ppre100_roc1 crate 1 2 65
+ppre150_roc1 crate 1 2 66
+ppre200_roc1 crate 1 2 67
+hpre40_roc1  crate 1 2 72
+hpre100_roc1 crate 1 2 73
+hpre150_roc1 crate 1 2 74
+hpre200_roc1 crate 1 2 75
+
+hs1x    crate 1 2  0
+hs1y 	crate 1 2  1
+hs2x 	crate 1 2  2
+hs2y    crate 1 2  3
+hT1     crate 1 2  6
+hedtm   crate 1 2 14
+hT3 	crate 1 2 47
+hstof   crate 1 2 56
+helreal crate 1 2 60
