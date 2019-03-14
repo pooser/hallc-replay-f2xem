@@ -24,6 +24,7 @@ void replay_hms_scalers(Int_t RunNumber=0, Int_t MaxEvent=0) {
   vector<TString> pathList;
   pathList.push_back(".");
   pathList.push_back("./raw");
+  pathList.push_back("./raw-jpsi");
   pathList.push_back("./raw/../raw.copiedtotape");
   pathList.push_back("./cache");
 
@@ -35,6 +36,7 @@ void replay_hms_scalers(Int_t RunNumber=0, Int_t MaxEvent=0) {
   gHcParms->Load(gHcParms->GetString("g_ctp_database_filename"), RunNumber);
   gHcParms->Load(gHcParms->GetString("g_ctp_parm_filename"));
   gHcParms->Load(gHcParms->GetString("g_ctp_kinematics_filename"), RunNumber);
+  gHcParms->Load(gHcParms->GetString("g_ctp_calib_filename"));
   gHcParms->Load("PARAM/TRIG/thms.param");
 
   // Load the Hall C style detector map
