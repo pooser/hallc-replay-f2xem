@@ -1,0 +1,18 @@
+#include "PARAM/GEN/gscalers_jpsi.param"
+#include "PARAM/SHMS/GEN/p_reftime_cut_jpsi.param"
+
+#include "PARAM/SHMS/NGCER/CUTS/pngcer_cuts_jpsi.param"
+#include "PARAM/SHMS/DC/CUTS/pdc_cuts_jpsi.param"
+#include "PARAM/SHMS/HODO/CUTS/phodo_cuts_jpsi.param"
+#include "PARAM/SHMS/HGCER/CUTS/phgcer_cuts_jpsi.param"
+#include "PARAM/SHMS/AERO/CUTS/paero_cuts_jpsi.param"
+#include "PARAM/SHMS/CAL/CUTS/pcal_cuts_jpsi.param"
+
+#include "PARAM/SHMS/NGCER/CALIB/pngcer_calib_jpsi.param"
+#include "PARAM/SHMS/DC/CALIB/pdc_calib_jpsi.param"
+#include "PARAM/SHMS/DC/CALIB/pdc_tzero_per_wire_jpsi.param"
+#include "PARAM/SHMS/HODO/CALIB/phodo_TWcalib_jpsi.param"
+#include "PARAM/SHMS/HODO/CALIB/phodo_Vpcalib_jpsi.param"
+#include "PARAM/SHMS/HGCER/CALIB/phgcer_calib_jpsi.param"
+#include "PARAM/SHMS/AERO/CALIB/paero_calib_jpsi.param"
+#include "PARAM/SHMS/CAL/CALIB/pcal_calib_jpsi.param"

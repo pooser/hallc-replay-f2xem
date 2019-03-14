@@ -1,0 +1,9 @@
+; copied from hallc_replay repo @ commit 96414cd
+gNumBCMs    = 6
+gBCM_Names  = "  BCM1      BCM2     Unser   BCM4A    BCM4B   BCM4C"
+gBCM_Gain   =   5713.0,   5528.0,   5020.0, 9279.0,  2102.0, 6343.0
+gBCM_Offset = 253400.0, 250900.0, 325000.0,  762.6,   317.9,  852.4
+
+gBCM_Current_threshold = 5.0
+; index = 0 to gNumBCMs-1
+gBCM_Current_threshold_index = 3
