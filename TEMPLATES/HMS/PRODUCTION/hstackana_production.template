@@ -135,6 +135,10 @@ Total Dead Time (EDTM) : {100.0 - (hcut_edtm_accepted.npassed / H.EDTM.scaler)*1
 = Live/Dead Time Calculations
 =:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:
 
+PS1 HMS Computer Live Time (ET) : {(hms_trigs.npassed / (H.hTRIG1.scaler/ghconfig_ti_ps_factors[0])):%3.4f}
+PS2 HMS Computer Live Time (ET) : {(hms_trigs.npassed / (H.hTRIG2.scaler/ghconfig_ti_ps_factors[1])):%3.4f}
+PS3 HMS Computer Live Time (ET) : {(hms_trigs.npassed / (H.hTRIG3.scaler/ghconfig_ti_ps_factors[2])):%3.4f}
+
 HMS Computer Live Time : {(hcut_TRIG1.npassed / H.hTRIG1.scaler)*100.0:%3.4f} % 
 HMS Computer Dead Time : {100.0 - (hcut_TRIG1.npassed / H.hTRIG1.scaler)*100.0:%3.4f} % 
 
